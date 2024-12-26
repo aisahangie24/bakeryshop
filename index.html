@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Bakery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: pink;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: purple;
+        }
+
+        nav a {
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #f8b400;
+            color: black;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        section {
+            margin: 2rem 0;
+        }
+
+        .product {
+            background-color: rgb(247, 241, 241);
+            display: inline-block;
+            margin: 1rem;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            width: 200px;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            margin: 0.5rem 0;
+        }
+
+        .product button {
+            background-color: #f8b400;
+            border: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            background-color: purple;
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #cart ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Toko Bakery</h1>
+    </header>
+    <nav>
+        <a href="#about">Tentang Kami</a>
+        <a href="#products">Produk</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>Tentang Kami</h2>
+            <p>Kami menyediakan roti dan kue terbaik untuk Anda!</p>
+        </section>
+        <section id="products">
+            <h2>Produk Kami</h2>
+            <div class="product">
+                <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2021/8/21/867b2896-d27f-4fab-a96a-8d754b490948.png"style="width:150px; height: auto;" alt="Roti Tawar">
+                <h3>Roti Manis</h3>
+                <p>Rp10.000</p>
+                <a href="https://wa.me/62895701259628?text=Halo%20saya%20ingin%20membeli%20produk%20ini" target="_blank">
+                    Beli</a>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDKfXR-xJZpTp4wZwi5gFYfcAkUVAmLg3LzQ&s" style="width:150px; height:150px;" alt="Kue Tart" />
+                <h3>Kue Tart</h3>
+                <p>Rp150.000</p>
+                <a href="https://wa.me/62895701259628?text=Halo%20saya%20ingin%20membeli%20produk%20ini" target="_blank">
+                    Beli</a>
+            </div>
+            <div class="product">
+                <img src="https://image.makewebeasy.net/makeweb/m_1920x0/rGAbosWut/DefaultData/edb4e16c_7cb4_4273_91d8_7d14758feadc.jpeg" style="width:150px; height:150px;" alt="Croissant" />
+                <h3>Croissant</h3>
+                <p>Rp20.000</p>
+                <a href="https://wa.me/62895701259628?text=Halo%20saya%20ingin%20membeli%20produk%20ini" target="_blank">
+                    Beli</a>
+            </div>
+            <div class="product">
+                <img src="https://nibble-images.b-cdn.net/nibble/original_images/IMG_20231208_125341.jpg" style="width:150px; height:auto;" alt="Croissant" />
+                <h3>Cromboloni</h3>
+                <p>Rp25.000</p>
+                <a href="https://wa.me/62895701259628?text=Halo%20saya%20ingin%20membeli%20produk%20ini" target="_blank">
+                    Beli</a>
+            </div>
+            <div class="product">
+                <img src="https://cdn.idntimes.com/content-images/post/20191009/67708043-344775739800700-7652389330171992793-n-27d24516536dab20f185b4a1ad4a3888.jpg" style="width:150px; height:auto;" alt="Croissant" />
+                <h3>Brownis</h3>
+                <p>Rp30.000</p>
+                <a href="https://wa.me/62895701259628?text=Halo%20saya%20ingin%20membeli%20produk%20ini" target="_blank">
+                    Beli</a>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxm8d0aL6tC6eECrciMXS-R2c1J-jP9WCP4A&s" style="width:150px; height:auto;" alt="Croissant" />
+                <h3>Dessert</h3>
+                <p>Rp25.000</p>
+                <a href="https://wa.me/62895701259628?text=Halo%20saya%20ingin%20membeli%20produk%20ini" target="_blank">
+                    Beli</a>
+            </div>
+            
+        </section>
+        <section id="contact" style="border: 2px solid #ddd; padding: 1rem; margin: 1rem 0; background-color: rgb(247, 241, 241);">
+            <h2 style="text-align: center; color: #333;">Kontak Kami</h2>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                <tr>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold;">Email</td>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">
+                        <a href="mailto:info@tokobakery.com" style="color: #020202; text-decoration: none;">info@tokobakery.com</a>
+                    </td>
+                </tr>
+                <tr> 
+                    <td style="padding: 0.5rem; border: 1px solid #ddd; font-weight: bold;">Telepon:</td>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">
+                        <a href="https://wa.me/62895701259628?text=Halo%20saya%20ingin%20bertanya" style="color: #020202; text-decoration: none;">+62 895 7012 59628</a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer style="font-size: 0.8rem; padding: 0.2rem; background-color: purple; color: white; text-align: center;">
+        <p>&copy; 2024 Toko Bakery. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
